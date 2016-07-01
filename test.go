@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"time"
 
-	"./cmdbk"
+	"github.com/kaepa/cmdbk"
 )
 
 var result = ""
 
 func main() {
 	cmdbk.Start(func(text string) {
-		result = text
+		result = texts
 		cmdbk.Flg = false
 	})
 	fmt.Println("foo")
